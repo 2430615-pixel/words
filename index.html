@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -268,7 +268,8 @@
 // ============================================================
 //  데이터
 // ============================================================
-const DEFAULT_WORDS = [\n{"id":1,"word":"abstract","meaning":"추상적인, 개요","part":"Adjective/Noun","priority":"상","difficulty":"중","status":"unlearned","starred":false},
+const DEFAULT_WORDS = [
+{"id":1,"word":"abstract","meaning":"추상적인, 개요","part":"Adjective/Noun","priority":"상","difficulty":"중","status":"unlearned","starred":false},
 {"id":2,"word":"accumulate","meaning":"축적하다, 쌓이다","part":"Verb","priority":"상","difficulty":"중","status":"unlearned","starred":false},
 {"id":3,"word":"accurate","meaning":"정확한, 정밀한","part":"Adjective","priority":"상","difficulty":"하","status":"unlearned","starred":false},
 {"id":4,"word":"acknowledge","meaning":"인정하다, 고마움을 표하다","part":"Verb","priority":"상","difficulty":"중","status":"unlearned","starred":false},
@@ -807,12 +808,12 @@ const DEFAULT_WORDS = [\n{"id":1,"word":"abstract","meaning":"추상적인, 개�
 {"id":537,"word":"whereas","meaning":"반면에, 에 반하여","part":"Conjunction","priority":"상","difficulty":"중","status":"unlearned","starred":false},
 {"id":538,"word":"whereby","meaning":"그것에 의해서, 함으로써","part":"Conjunction","priority":"중","difficulty":"상","status":"unlearned","starred":false},
 {"id":539,"word":"widespread","meaning":"광범위한, 널리 퍼진","part":"Adjective","priority":"상","difficulty":"중","status":"unlearned","starred":false}
-][];
+];
 
 // ============================================================
 //  상태 (localStorage)
 // ============================================================
-const STORE_KEY = 'vocabAppState_v3';
+const STORE_KEY = 'vocabAppState_v4';
 let state = {
     words: [],
     currentIdx: 0,
